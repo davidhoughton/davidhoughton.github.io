@@ -1,0 +1,621 @@
+
+/**************** Site Styles ******************/
+
+html, body {
+    font-family: 'Open Sans', sans-serif; 
+    background-color: #fff;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    min-height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.page-container {
+    position: relative;
+    min-height: 80%;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-header {
+    position: absolute;
+    margin-top: 15%;
+    font-weight: 300; 
+    font-size: 40px;
+    line-height: 55px; 
+    letter-spacing: 8px;
+}
+
+.site-intro{
+    position: absolute;
+    margin-top: 30%;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    width: 65%; 
+    padding: 30px 0px;
+}
+
+a{
+    color: #000;
+}
+
+a:hover{
+    color: #000;
+}
+
+/*------ Media ------*/
+@media screen and (max-width: 600px) {
+    .site-header {font-size: 16px; letter-spacing: 2px;}
+    .site-intro {font-size: 8px; width: 250px;}
+ }
+
+ 
+/*------ Intro Animation ------*/
+.animate-reveal {
+    opacity: 0;
+    -webkit-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+       -moz-animation: reveal 2s ease-in 1 normal forwards;
+         -o-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+            animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+  }
+  
+  .animate-first {
+    -webkit-animation-delay: 0;
+       -moz-animation-delay: 0;
+         -o-animation-delay: 0;
+            animation-delay: 0;
+  }
+
+  @-webkit-keyframes reveal {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+         -moz-transform: translateY(100%);
+           -o-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+           -o-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  
+  @-moz-keyframes reveal {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+         -moz-transform: translateY(100%);
+           -o-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+           -o-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  
+  @-o-keyframes reveal {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+         -moz-transform: translateY(100%);
+           -o-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+           -o-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  
+  @keyframes reveal {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+         -moz-transform: translateY(100%);
+           -o-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+         -moz-transform: translateY(0);
+           -o-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }  
+
+/**  Page Settings  **/
+
+.page-header {
+    margin-left: 0%;
+    font-weight: 300; 
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 8px;
+}
+
+.page-intro{
+    margin-left: 0%;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    width: 65%; 
+    padding: 10px 0px 50px;
+}
+
+
+/*------ Media ------*/
+@media screen and (max-width: 600px) {
+    .page-header {font-size: 25px; letter-spacing: 2px;}
+    .page-intro {font-size: 8px; width: 250px;padding: 10px 0px 25px;}
+ }
+
+.page-sub-header {
+    margin-top: 4%;
+    font-size: 18px;
+    font-weight: 600; 
+    letter-spacing:.3rem;
+    color: #000;
+}    
+
+.page-sub-intro {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 5%;
+    margin-left: 0;
+    width: 75%;
+    color: #000;
+}
+
+.page-content {
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-top: 4%;
+    font-weight: 200;
+    font-size: 15px;
+    letter-spacing: 0.7px;
+    line-height: 160%;
+    width: 80%;
+    color: #000;
+}
+
+
+/**  Page List Settings  **/
+ul.page-list {
+    list-style-position: outside;
+    padding: 0px 10px; 
+    margin-bottom: 30px; 
+}
+
+ul.page-footer {
+    list-style-type: none;
+    line-height: 80%;
+    padding: 0px 0px;
+}
+
+li
+{
+margin: 10px 0;
+}
+
+/**  Page Wrapper  **/
+.wrapper {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
+
+
+
+span {
+    font-size: 20px;
+    cursor: pointer; 
+    float: right;
+    color: dimgray;
+}
+
+
+/*------ Images ------*/
+.apra {
+    width: 130px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/apra.png) no-repeat center center;
+    background-size: 128px 33px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.databank {
+    width: 115px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/databank.png) no-repeat center center;
+    background-size: 107px 27px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.datarepublic {
+    width: 115px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/datarepublic.png) no-repeat center center;
+    background-size: 103px 31px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.ibm {
+    width: 115px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/ibm.png) no-repeat center center;
+    background-size: 66px 30px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.fico {
+    width: 115px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/fico.jpg) no-repeat center center;
+    background-size: 61px 28px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.westpac {
+    width: 208px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/westpacgroup200.jpg) no-repeat center center;
+    background-size: 190px 22px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+
+.deloitte {
+    width: 115px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/deloitte.jpg) no-repeat center center;
+    background-size: 79px 15px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.equifax {
+    width: 115px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/equifax.png) no-repeat center center;
+    background-size: 92px 18px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.experian {
+    width: 115px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/experian.png) no-repeat center center;
+    background-size: 100px 33px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.hyperanna {
+    width: 115px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/hyperanna.png) no-repeat center center;
+    background-size: 110px 22px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.kpmg {
+    width: 115px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/kpmg.jpg) no-repeat center center;
+    background-size: 106px 33px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.manchester {
+    width: 115px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/manchester.png) no-repeat center center;
+    background-size: 114px 55px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.microsoft {
+    width: 115px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/microsoft.jpg) no-repeat center center;
+    background-size: 132px 49px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.nswgov {
+    width: 115px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/nswgov.png) no-repeat center center;
+    background-size: 68px 68px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.orc {
+    width: 115px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/orc.png) no-repeat center center;
+    background-size: 75px 40px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.pwc {
+    width: 115px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/pwc.png) no-repeat center center;
+    background-size: 113px 56px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.qlik {
+    width: 115px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/qlik.png) no-repeat center center;
+    background-size: 77px 24px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.sas {
+    width: 115px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/sas.jpg) no-repeat center center;
+    background-size: 78px 32px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.scoresharp {
+    width: 115px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/scoresharp.png) no-repeat center center;
+    background-size: 102px 47px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.tableau {
+    width: 125px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/tableau.jpg) no-repeat center center;
+    background-size: 139px 52px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.tcs {
+    width: 205px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/tcs.png) no-repeat center center;
+    background-size: 140px 48px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.teradata {
+    width: 205px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/teradata.jpg) no-repeat center center;
+    background-size: 102px 27px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.dataro {
+    width: 205px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/dataro.png) no-repeat center center;
+    background-size: 102px 37px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.hortonworks {
+    width: 205px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/hortonworks.png) no-repeat center center;
+    background-size: 132px 49px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.basiq {
+    width: 205px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/basiq.png) no-repeat center center;
+    background-size: 102px 37px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.aprintern {
+    width: 205px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/aprintern.png) no-repeat center center;
+    background-size: 100px 33px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.edgered {
+    width: 205px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/edgered.png) no-repeat center center;
+    background-size: 102px 32px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.fueld {
+    width: 205px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/fueld.png) no-repeat center center;
+    background-size: 132px 39px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.inferentics {
+    width: 205px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/inferentics.png) no-repeat center center;
+    background-size: 102px 37px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+.reinventure {
+    width: 205px;
+    height: 80px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background:url(images/reinventure.png) no-repeat center center;
+    background-size: 140px 48px;
+    padding: 2rem 0;
+    margin:0 auto;
+    opacity: 0.9;
+}
+
+
+/* Particles JS Container */
+#particles-js {
+    display: block;
+    vertical-align: bottom;
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
