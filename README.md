@@ -1,3 +1,3 @@
 # davidhoughton.github.io
 
-One one-pager profile
+A one-pager profile
